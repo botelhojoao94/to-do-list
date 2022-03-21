@@ -46,29 +46,28 @@ function DeleteListModal(props) {
     return (
         <>
             <div list_id={props.list_id} onClick={handleShow}>
-                Delete
+                Excluir
             </div>
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Delete task</Modal.Title>
+                    <Modal.Title>Excluir lista</Modal.Title>
                 </Modal.Header>
 
                 <Modal.Body>
-                    Are you sure you want to delete the list "{props.list_title}"? All the
-                    tasks will be deleted as well!
+                Tem certeza que deseja excluir a lista "{props.list_title}"? Todas as atividades também serão excluídas!
                 </Modal.Body>
 
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
-                        Close
+                        Cancelar
                     </Button>
                     <Button
                         variant="danger"
                         list_id={props.list_id}
                         onClick={handleDelete}
                     >
-                        Delete
+                        Excluir
                     </Button>
                 </Modal.Footer>
             </Modal>

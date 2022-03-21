@@ -12,13 +12,13 @@ const AppProvider = ({ children }) => {
     // Notification (toast)
     const notify = {
         deletedList: function () {
-            toast.success("List successfully deleted!", {
+            toast.success("Lista excluída com sucesso!", {
                 autoClose: 3000,
                 hideProgressBar: true,
             });
         },
         deletedItem: function () {
-            toast.success("Task successfully deleted", {
+            toast.success("Atividade excluída com sucesso!", {
                 autoClose: 3000,
                 hideProgressBar: true,
             });

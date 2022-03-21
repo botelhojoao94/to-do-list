@@ -110,7 +110,7 @@ function Item(props) {
                                 <FontAwesomeIcon icon={faEllipsisH} />
                             </Dropdown.Toggle>
                             <Dropdown.Menu>
-                                <Dropdown.Header>Move to list</Dropdown.Header>
+                                <Dropdown.Header>Mover para a list:</Dropdown.Header>
                                 {lists.map((list, key) => {
                                     if (list.id != props.item.list_id)
                                         return (

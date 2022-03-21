@@ -12,7 +12,7 @@ function Header() {
     const handleCreateList = () => {
         api
             .post("/data/list", {
-                title: "New List",
+                title: "Nova lista",
             })
             .then((response) => {
                 console.log("New list created");
@@ -35,7 +35,7 @@ function Header() {
                     }}
                     variant="outline-success"
                 >
-                    + Create list
+                    + Criar lista
                 </Button>
             </Container>
         </Navbar>

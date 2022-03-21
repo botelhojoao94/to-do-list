@@ -33,28 +33,28 @@ function DeleteItemModal(props) {
     return (
         <>
             <div item_id={props.item_id} onClick={handleShow}>
-                Delete
+                Excluir
             </div>
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Delete task</Modal.Title>
+                    <Modal.Title>Deletar atividade</Modal.Title>
                 </Modal.Header>
 
                 <Modal.Body>
-                    Are you sure you want to delete the task "{props.item_title}"?
+                    Tem certeza que deseja excluir a atividade "{props.item_title}"?
                 </Modal.Body>
 
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
-                        Close
+                        Cancelar
                     </Button>
                     <Button
                         variant="danger"
                         item_id={props.item_id}
                         onClick={handleDelete}
                     >
-                        Delete
+                        Excluir
                     </Button>
                 </Modal.Footer>
             </Modal>

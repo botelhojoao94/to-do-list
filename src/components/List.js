@@ -18,8 +18,8 @@ function List(props) {
     const handleCreateItem = (e, listId) => {
         api
             .post("/data/item", {
-                title: "New task",
-                description: "Description",
+                title: "Nova atividade",
+                description: "Descrição",
                 list_id: listId,
                 color: "#EBECF0",
             })
@@ -96,7 +96,7 @@ function List(props) {
                                 handleCreateItem(e, props.list.id);
                             }}
                         >
-                            + Create new task
+                            + Criar nova atividade
                         </div>
                     </Card.Footer>
                 </Card.Body>
