@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export const api = axios.create({
-    baseURL: "https://kanbanboard-back.vercel.app",
+    baseURL: "https://v360-kanban-node.vercel.app/",
 });
